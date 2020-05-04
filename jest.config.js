@@ -10,6 +10,6 @@ module.exports = {
     '@/(.*)': '<rootDir>/src/$1',
   },
   rootDir: __dirname,
-  testMatch: ['<rootDir>/src/**/__tests__/**/*spec.[jt]s?(x)'],
+  testMatch: ['<rootDir>/src/**/__tests__/**/*.spec.[jt]s?(x)'],
   testPathIgnorePatterns: ['/node_modules/'],
 };
