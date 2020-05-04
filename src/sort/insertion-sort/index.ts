@@ -1,5 +1,11 @@
 import { compareBiggerThan } from '@/helpers/compare';
 
+/**
+ * @description 插入排序
+ * @description 最优：O(n) 平均：0(n^2) 最坏：0(n^2)
+ * @param array 待排序数组
+ * @param compareFn 传入的比较方法
+ */
 export function inserttionSort<T>(array: T[], compareFn = compareBiggerThan): T[] {
   const length = array.length;
 
