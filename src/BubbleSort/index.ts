@@ -1,5 +1,5 @@
-import { compareBiggerThan } from '../helpers/compare';
-import { swap } from '../helpers/swap';
+import { compareBiggerThan } from '@/helpers/compare';
+import { swap } from '@/helpers/swap';
 
 /**
  * @description 最简单的双循环冒泡排序

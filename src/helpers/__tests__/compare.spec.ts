@@ -1,4 +1,4 @@
-import { compareLessThan, compareEqual, compareBiggerThan } from '../compare';
+import { compareLessThan, compareEqual, compareBiggerThan } from '@/helpers/compare';
 
 describe('测试默认比较函数', () => {
   it('测试小于函数', () => {
