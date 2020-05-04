@@ -1,9 +1,9 @@
 export function testSortAlgorithms(sortAlgorithm: Function, algorithmName: string) {
   describe(algorithmName, () => {
-    // const noSortArray = [3, 1, 2];
-    // const sortedArray = [1, 2, 3];
-    const noSortArray = [13, 45, 2, 76, 32, 90, 5, 31];
-    const sortedArray = [2, 5, 13, 31, 32, 45, 76, 90];
+    const noSortArray = [3, 2, 1];
+    const sortedArray = [1, 2, 3];
+    // const noSortArray = [13, 45, 2, 76, 32, 90, 5, 31];
+    // const sortedArray = [2, 5, 13, 31, 32, 45, 76, 90];
 
     it(`${algorithmName}--测试空数组`, () => {
       expect(sortAlgorithm([])).toEqual([]);
