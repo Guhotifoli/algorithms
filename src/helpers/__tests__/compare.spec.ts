@@ -1,4 +1,3 @@
-
 import { compareLessThan, compareEqual, compareBiggerThan } from '../compare';
 
 describe('测试默认比较函数', () => {
@@ -23,4 +22,4 @@ describe('测试默认比较函数', () => {
     expect(compareLessThan(1, 1)).toEqual(false);
     expect(compareLessThan(-1, -1)).toEqual(false);
   });
-})
+});

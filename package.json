@@ -6,8 +6,9 @@
   "scripts": {
     "lint": "prettier --write './src/**/*.ts'",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "test:watch": "jest --watchAll --coverage",
-    "ci": "yarn lint && yarn test -- --coverage",
+    "ci": "yarn lint && yarn test:coverage",
     "cm": "npx git-cz"
   },
   "husky": {
