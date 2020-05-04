@@ -7,8 +7,12 @@ export function testSortAlgorithms(sortAlgorithm: Function, algorithmName: strin
       expect(sortAlgorithm([])).toEqual([]);
     });
 
-    it(`${algorithmName}--测试正常排序`, () => {
+    it(`${algorithmName}--测试无序数组能否正常排序`, () => {
       expect(sortAlgorithm(norSortArray)).toEqual(sortedArray);
+    });
+
+    it(`${algorithmName}--测试有序数组能否正常排序`, () => {
+      expect(sortAlgorithm(sortedArray)).toEqual(sortedArray);
     });
   });
 }
