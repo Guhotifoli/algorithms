@@ -1,4 +1,3 @@
-
 import { inserttionSort } from '@/sort/insertion-sort';
 import { testSortAlgorithms } from '@/test-utils/test-sort-algorithms';
 
