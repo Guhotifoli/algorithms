@@ -1,5 +1,4 @@
 import { compareBiggerThan } from '@/helpers/compare';
-import { swap } from '@/helpers/swap';
 
 export function inserttionSort<T>(array: T[], compareFn = compareBiggerThan): T[] {
   const length = array.length;
