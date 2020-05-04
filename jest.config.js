@@ -3,11 +3,12 @@ module.exports = {
   testEnvironment: 'node',
   coverageDirectory: 'coverage',
   coverageReporters: ['html', 'lcov', 'text'],
-  collectCoverageFrom: [
-    'src/**/*.ts',
-  ],
+  collectCoverageFrom: ['src/**/*.ts'],
   watchPathIgnorePatterns: ['/node_modules/', '/dist/', '/.git/'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
+  moduleNameMapper: {
+    '@/(.*)': '<rootDir>/src/$1',
+  },
   rootDir: __dirname,
   testMatch: ['<rootDir>/src/**/__tests__/**/*spec.[jt]s?(x)'],
   testPathIgnorePatterns: ['/node_modules/'],
