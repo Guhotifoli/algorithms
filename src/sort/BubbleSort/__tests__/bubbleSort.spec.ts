@@ -1,4 +1,4 @@
-import { normalBubbleSort, optimizeBubbleSort } from '@/BubbleSort';
+import { normalBubbleSort, optimizeBubbleSort } from '@/sort/BubbleSort';
 import { testSortAlgorithms } from '@/test-utils/test-sort-algorithms';
 
 testSortAlgorithms(normalBubbleSort, '普通冒泡排序');
