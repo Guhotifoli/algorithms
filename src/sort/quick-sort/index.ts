@@ -1,11 +1,6 @@
 import { compareBiggerThan } from '@/helpers/compare';
 
-function partition<T>(
-  array: T[],
-  compareFn = compareBiggerThan,
-  left: number,
-  right: number,
-) {
+function partition<T>(array: T[], compareFn: Function, left: number, right: number) {
   // 先指定一个基准值
   const pivot = array[left];
   // 判断左右指针是否重合，重合就停止循环
