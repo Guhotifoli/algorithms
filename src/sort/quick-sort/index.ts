@@ -39,3 +39,24 @@ export function quickSort<T>(
   }
   return array;
 }
+
+export function partition2(array, l, r) {
+  const pivot = array[l];
+  while (l < r) {
+    while (l < r && array[r] > pivot) --r;
+    array[l] = array[r];
+    while (l < r && array[l] <= pivot) ++l;
+    array[r] = array[l];
+  }
+  array[l] = pivot;
+  return l;
+}
+
+export function quickSort2(array: [], l = 0, r = array.length - 1) {
+  if (l < r) {
+    const pivot = partition2(array, l, r);
+    quickSort2(array, l, pivot - 1);
+    quickSort2(array, pivot + 1, r);
+  }
+  return array;
+}
